@@ -1,16 +1,18 @@
 #include <stdio.h>
+
 /**
-*main - Entry point of the program
-*Description:this program prints the size of various types in bytes
-*warning are allwed, and the program returns 0
+* main - Entry point of the program
 *
-*Return:Always 0 (success)
+* Description: This program prints the size of various types in bytes.
+* Warnings are allowed, and the program returns 0.
+*
+* Return: Always 0 (Success)
 */
 int main(void)
 {
-printf("size of a char: %lu byte(s)\n", sizeof(char));
+printf("Size of a char: %lu byte(s)\n", sizeof(char));
 printf("Size of an int: %lu byte(s)\n", sizeof(int));
-printf("Size of a long intger: %lu byte(s)\n", sizeof(long int));
+printf("Size of a long int: %lu byte(s)\n", sizeof(long int)); // Fixed the typo here
 printf("Size of a long long int: %lu byte(s)\n", sizeof(long long int));
 printf("Size of a float: %lu byte(s)\n", sizeof(float));
 return (0);
