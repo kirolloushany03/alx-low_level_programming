@@ -10,8 +10,9 @@ int main(void)
 {
 char lc, uc;
 /*we have to declare the variables*/
-/*no space before commas*/
-for (lc = 'a', uc = 'A'; lc <= 'z', uc <= 'Z'; lc++, uc++)
+/*no space before commas and also you*/
+/*have to use && to combine the conditions*/
+for (lc = 'a', uc = 'A'; lc <= 'z' && uc <= 'Z'; lc++, uc++)
 {
 /*here we dont have to put %c as putchar is for char*/
 putchar(lc);
