@@ -17,6 +17,6 @@ for (l = 'a'; l <= 'z' ; l++)
 putchar(l);
 }
 /*to add a new line after the whole things with the chars*/
-putchar('\n')
+putchar('\n');
 return (0);
 }
