@@ -19,6 +19,7 @@ putchar(lc);
 putchar(uc);
 }
 /*to add a new line after the whole things with the chars*/
+
 putchar('\n');
 return (0);
 }
