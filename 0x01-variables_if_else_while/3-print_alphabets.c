@@ -16,10 +16,12 @@ for (lc = 'a', uc = 'A'; lc <= 'z' && uc <= 'Z'; lc++, uc++)
 {
 /*here we dont have to put %c as putchar is for char*/
 putchar(lc);
+}
+for (lc = 'A', uc = 'a'; lc <= 'Z' && uc <= 'z'; lc++, uc++)
+{
 putchar(uc);
 }
 /*to add a new line after the whole things with the chars*/
-
 putchar('\n');
 return (0);
 }
