@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*main - Entry point of entry 
+*main - Entry point of entry
 *
 *description: this program print s base 10
 *
