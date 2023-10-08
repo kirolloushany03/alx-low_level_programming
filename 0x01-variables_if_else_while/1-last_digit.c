@@ -8,7 +8,7 @@
 *and it will make us know the last digit and the last digit is 0
 *or greater thatn 5 or is leass thatn 6 and not 0
 *
-*Return always 0 (success)
+*Return: Always 0 (success)
 */
 int main(void)
 {
