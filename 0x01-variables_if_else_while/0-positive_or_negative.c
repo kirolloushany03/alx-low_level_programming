@@ -5,7 +5,7 @@
 /**
 *main - Entry point
 *
-*description: this program will print an random number each time 
+*description: this program will print an random number each time
 *the program will excute and will tell you the number
 *is positive or negative
 *
@@ -23,9 +23,9 @@ if (n > 0)
 printf("%d is positive\n", n);
 	}
 else if (n == 0)
-    {
+{
 printf("%d is zero\n", n);
-	}
+}
 else
 {
 printf("%d is negative\n", n);
