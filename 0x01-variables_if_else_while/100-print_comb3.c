@@ -1,26 +1,26 @@
 #include <stdio.h>
 
 /**
-* main - Entry point of the program
-*
-* Description: This program prints all possible combinations of two-digit
-* numbers, from 01 to 99, separated by a comma and space. The numbers are
-* printed in ascending order.
-*
-* Return: Always 0 (Success)
-*/
+ * main - Entry point of the program
+ *
+ * Description: This program prints all possible combinations of two-digit
+ * numbers, from 01 to 89, separated by a comma and space. The numbers are
+ * printed in ascending order.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-int k, m;
+int i, j;
 
-for (k = 0; k < 10; k++)
+for (i = 0; i < 9; i++)
 {
-for (m = (k + 1); m < 10; m++)
+for (j = i + 1; j < 10; j++)
 {
-putchar(k + '0');
-putchar(m + '0');
+putchar(i + '0');
+putchar(j + '0');
 
-if (k != 8 || m != 9)
+if (i != 8 || j != 9)
 {
 putchar(',');
 putchar(' ');
