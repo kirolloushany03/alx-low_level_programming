@@ -20,7 +20,7 @@ for (m = (k + 1); m < 10; m++)
 putchar(k + '0');
 putchar(m + '0');
 
-if (k < 8 || m < 9)
+if (k != 8 || m != 9)
 {
 putchar(',');
 putchar(' ');
