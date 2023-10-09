@@ -12,14 +12,16 @@
  */
 int main(void)
 {
-for (int i = 0; i < 100; i++)
+int i, j, first_digit1, second_digit1, first_digit2, second_digit2;
+
+for (i = 0; i < 100; i++)
 {
-for (int j = i + 1; j < 100; j++)
+for (j = i + 1; j < 100; j++)
 {
-int first_digit1 = i / 10;
-int second_digit1 = i % 10;
-int first_digit2 = j / 10;
-int second_digit2 = j % 10;
+first_digit1 = i / 10;
+second_digit1 = i % 10;
+first_digit2 = j / 10;
+second_digit2 = j % 10;
 
 putchar(first_digit1 + '0');
 putchar(second_digit1 + '0');
