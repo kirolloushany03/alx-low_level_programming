@@ -1,7 +1,12 @@
 #include "main.h"
 
-int main(void)
+void print_alphabet(void)
 {
-    print_alphabet();
-    return (0);
+    char l = 'a';
+    while (l <= 'z')
+    {
+        _putchar(l);
+        l++;
+    }
+    _putchar('\n');
 }
