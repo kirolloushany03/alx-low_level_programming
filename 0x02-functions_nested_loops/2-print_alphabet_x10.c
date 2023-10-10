@@ -5,8 +5,22 @@
  */
 void print_alphabet_x10(void)
 {
-for (int i = 0; i < 10; i++)
-{
-print_alphabet();
+    for (int i = 0; i < 10; i++)
+    {
+        print_alphabet();
+    }
 }
+
+/**
+ * print_alphabet - Prints the lowercase alphabet followed by a newline
+ */
+void print_alphabet(void)
+{
+char l = 'a';
+while (l <= 'z')
+{
+_putchar(l);
+l++;
+}
+_putchar('\n');
 }
