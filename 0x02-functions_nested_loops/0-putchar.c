@@ -19,6 +19,6 @@ return (printf("%s", str));
 */
 int main(void)
 {
-_putchar("Hello, world!\n");
+_putchar("_putchar\n");
 return (0);
 }
