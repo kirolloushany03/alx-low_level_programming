@@ -2,10 +2,10 @@
 /**
  * _isalpha : chek if a character is aphabetic character
  *@ c : is the cahracter to be checked
- *
- *
- *
- *return:  1 if the character is an alphabetic character , 0 otherwise
+ *Description:
+ *This function checks if the character `c` is an alphabetic character,
+ *Return:
+ *1 if the character is an alphabetic character, 0 otherwise.
 */
 int _isalpha(int c)
 {
