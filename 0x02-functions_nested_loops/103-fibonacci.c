@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include "main.h"
+
 int main() {
-  long int sum = 2;
+  long int sum = 0;
   long int first = 0;
   long int second = 2;
 
