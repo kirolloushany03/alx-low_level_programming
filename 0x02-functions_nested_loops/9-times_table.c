@@ -23,7 +23,7 @@ _putchar(' ');
 _putchar(' ');
 _putchar(result + '0');
 }
- else
+else
 {
 _putchar(' ');
 _putchar((result / 10) + '0');
