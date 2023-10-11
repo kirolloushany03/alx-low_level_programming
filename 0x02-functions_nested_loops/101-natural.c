@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main.h"
 int main() {
     int sum = 0;
     int i;
@@ -10,7 +10,7 @@ int main() {
         }
     }
 
-    printf("The sum of all multiples of 3 or 5 below 1024 is: %d\n", sum);
+    printf("%d\n", sum);
 
     return 0;
 }
