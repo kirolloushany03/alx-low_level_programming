@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point
- * Description: Prints the first 50 Fibonacci numbers separated by a comma and space.
+ * Description: Prints the first 50 Fibonacci numbers separated by a
  * Return: Always 0 (Success)
  */
 int main(void)
