@@ -4,7 +4,7 @@
  * main - Entry point
  *
  * Description:
- * Computes and prints the sum of all multiples of 3 or 
+ * Computes and prints the sum of all multiples of 3 or
  *
  * Return: Always 0 (Success)
  */
