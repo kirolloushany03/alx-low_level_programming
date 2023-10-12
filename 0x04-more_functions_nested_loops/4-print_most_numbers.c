@@ -1,22 +1,19 @@
 #include "main.h"
-#include <unistd.h>
 
 /**
- * print_most_numbers - Prints numbers from 0 to 9, excluding 2 and 4.
+ * print_most_numbers - a function that prints the numbers, from 0 to 9
  *
- * This function prints the numbers from '0' to '9', one at a time, with the
- * exception of '2' and '4'. It uses the custom _putchar function to display
- * the characters on the standard output (usually the terminal).
+ * Return: 0-9, excluding 2 and 4, followed by a new line
  */
-
 void print_most_numbers(void)
 {
-char d;
-for (d = '0'; d <= '9'; d++)
+int i;
+
+for (i = 0; i <= 9; i++)
 {
-if (d != '2' && d != '4')
+if (i != 2 && i != 4)
 {
-_putchar(d);
+_putchar(i + '0');
 }
 }
 _putchar('\n');
