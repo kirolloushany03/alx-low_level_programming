@@ -26,7 +26,7 @@ void puts_half(char *str)
 	a = b / 2;
 	if (b % 2)
 		a += 1;
-	while (a < i)
+	while (a < b)
 	{
 		putchar(*(str + a));
 		a++;
