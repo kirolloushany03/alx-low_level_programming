@@ -17,7 +17,7 @@
 void _puts(char *str)
 {
 if (str != NULL)
-}
+{
 puts(str);
 }
 }
