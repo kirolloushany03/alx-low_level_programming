@@ -24,12 +24,12 @@ void puts_half(char *str)
 	while (*(str + b))
 		b++;
 	a = b / 2;
-	if (i % 2)
+	if (b % 2)
 		a += 1;
 	while (a < i)
 	{
-		_putchar(*(str + a));
+		putchar(*(str + a));
 		a++;
 	}
-	_putchar('\n');
+	putchar('\n');
 }
