@@ -17,28 +17,26 @@
  * If the string is NULL, no action is taken.
  */
 
-
 void puts_half(char *str)
 {
-if (str != NULL)
-{
+if (str != NULL){
 int length = 0;
 int start_index = 0;
-while (str[length] != '\0')
+int i;
+
+while (str[length] != '\0') 
 {
 length++;
 }
 
-if (length % 2 == 0)
+if (length % 2 == 0) 
 {
 start_index = length / 2;
-}
-else
-{
+} else {
 start_index = (length - 1) / 2;
 }
 
-for (int i = start_index; str[i] != '\0'; i++)
+for (i = start_index; str[i] != '\0'; i++) 
 {
 putchar(str[i]);
 }
@@ -46,4 +44,3 @@ putchar(str[i]);
 putchar('\n');
 }
 }
-
