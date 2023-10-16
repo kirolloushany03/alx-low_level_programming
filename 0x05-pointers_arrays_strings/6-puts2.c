@@ -15,15 +15,21 @@
  * If the string is NULL, no action is taken.
  */
 
+void puts2(char *str)
+{
+	int len, i;
 
-void puts2_for(char *str)
-{
-if (str != NULL)
-{
-for (int i = 0; str[i] != '\0'; i += 2)
-{
-putchar(str[i]);
-}
-putchar('\n');
-}
+	len = 0;
+
+	while (str[len] != '\0')
+	{
+		len++;
+	}
+
+	for (i = 0; i < len; i += 2)
+	{
+		_putchar(str[i]);
+	}
+
+	_putchar('\n');
 }
