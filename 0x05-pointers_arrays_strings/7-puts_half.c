@@ -19,31 +19,17 @@
 
 void puts_half(char *str)
 {
-if (str != NULL)
-{
-int length = 0;
-int start_index = 0;
-int i;
+	int a, b = 0;
 
-while (str[length] != '\0')
-{
-length++;
-}
-
-if (length % 2 == 0)
-{
-start_index = length / 2;
-}
-else
-{
-start_index = (length - 1) / 2;
-}
-
-for (i = start_index; str[i] != '\0'; i++)
-{
-putchar(str[i]);
-}
-
-putchar('\n');
-}
+	while (*(str + b))
+		b++;
+	a = b / 2;
+	if (i % 2)
+		a += 1;
+	while (a < i)
+	{
+		_putchar(*(str + a));
+		a++;
+	}
+	_putchar('\n');
 }
