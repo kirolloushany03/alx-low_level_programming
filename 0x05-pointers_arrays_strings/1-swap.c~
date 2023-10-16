@@ -1,0 +1,16 @@
+#include "main5.h"
+
+/**
+*swap_int - will swap the numbers between pointer a and pointer b
+*
+*@temp: this the variable that will store one of the pointer
+*
+*to be able to swab the other
+*/
+void swap_int(int *a, int *b)
+{
+
+int temp = *a;
+*a = *b;
+*b = temp;
+}
