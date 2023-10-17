@@ -31,4 +31,8 @@ printf("%d", a[i]);
 
 printf("\n");
 }
+else
+{
+printf("Array length is invalid.\n");
+}
 }
