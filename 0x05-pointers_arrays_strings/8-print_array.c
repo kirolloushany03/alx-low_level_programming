@@ -17,22 +17,14 @@
 
 void print_array(int *a, int n)
 {
-if (a != NULL && n > 0)
-{
-int i;
-for (i = 0; i < n; i++)
-{
-if (i > 0)
-{
-printf(", ");
-}
-printf("%d", a[i]);
-}
+	int b = 0;
 
-printf("\n");
-}
-else
-{
-printf("Array length is invalid.\n");
-}
+	while (b < n)
+	{
+		printf("%d", a[b]);
+		if (b < (n - 1))
+			printf(", ");
+		b++;
+	}
+	printf("\n");
 }
