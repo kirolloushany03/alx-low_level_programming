@@ -1,7 +1,7 @@
 #include "main6.h"
 
 /**
- * reverse_array - Reverses the content of an array of integers.
+ * rev_string - reverse array
  * @n: integer params
  * Return: 0
  */
