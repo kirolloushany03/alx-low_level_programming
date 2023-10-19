@@ -5,9 +5,6 @@
  * @str: The string to be modified.
  *
  * This function takes a string 'str' as its parameter and capitalizes
- * the first letter of each word within the string. Words are separated
- * by spaces, tabs, newlines, commas, semicolons, periods, exclamation
- * marks, question marks, double quotes, parentheses, and curly braces.
  *Return: A pointer to the modified input string ('str').
  */
 
