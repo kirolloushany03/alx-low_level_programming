@@ -1,5 +1,3 @@
-#include "main6.h"
-
 #include "main.h"
 
 /**
