@@ -10,6 +10,7 @@
  * checking if it's a lowercase letter (in the ASCII range 'a' to 'z'), and
  * if it is, it converts it to uppercase by subtracting 32 from
  * its ASCII value.
+ * Return: A pointer to the modified input string ('n').
  */
 
 char *string_toupper(char *n)
