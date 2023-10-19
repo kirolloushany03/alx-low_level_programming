@@ -10,20 +10,23 @@
  * Return: A pointer to the resulting string 'dest'.
  */
 
-char *_strncat(char *dest, const char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
-char *result = dest;
-while (*dest != '\0')
-{
-dest++;
-}
-while (*src != '\0' && n > 0)
-{
-*dest = *src;
-dest++;
-src++;
-n--;
-}
-*dest = '\0';
-return (result);
+	int i;
+	int j;
+
+	i = 0;
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+	j = 0;
+	while (j < n && src[j] != '\0')
+	{
+	dest[i] = src[j];
+	i++;
+	j++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }
