@@ -1,10 +1,12 @@
 #include "main6.h"
 
+#include "main.h"
+
 /**
- * print_number - Prints an integer to the standard output.
- * @n: The integer to be printed.
- * Return: No return value (void function).
- */
+  * print_number - print numbers chars
+  * @n: integer params
+  * Return: 0
+ **/
 
 void print_number(int n)
 {
