@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main6.h"
 
 /**
   * print_number - print numbers chars
