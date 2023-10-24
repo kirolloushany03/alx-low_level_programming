@@ -1,3 +1,4 @@
+#include "main7.h"
 /**
  * _strstr - locates a substring
  * @haystack: the string to be searched
