@@ -1,13 +1,12 @@
 #include "main8.h"
 #include <stdio.h>
 
-
 int _sqrt_recursion(int n);
 int sqrt_helper(int n, int start, int end);
 
 /**
- * _sqrt_recursion - Returns the natural square root
- * of a number using recursion.
+ * _sqrt_recursion - Returns the natural square
+ * root of a number using recursion.
  * @n: The number to find the square root of.
  *
  * Return: The natural square root of the given number.
@@ -36,10 +35,12 @@ int _sqrt_recursion(int n)
  */
 int sqrt_helper(int n, int start, int end)
 {
+	int mid;
+
 	if (start > end)
 		return (-1);
 
-	int mid = (start + end) / 2;
+	mid = (start + end) / 2;
 
 	if (mid * mid == n)
 		return (mid);
