@@ -22,14 +22,3 @@ int is_palindrome(char *s)
 
 	return is_palindrome(s + 1);
 }
-
-int main(void)
-{
-	char *str1 = "level";
-	char *str2 = "hello";
-
-	printf("%s is a palindrome: %d\n", str1, is_palindrome(str1));
-	printf("%s is a palindrome: %d\n", str2, is_palindrome(str2));
-
-	return 0;
-}
