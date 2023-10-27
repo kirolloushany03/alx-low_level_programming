@@ -8,17 +8,18 @@
  * @argv: The array containing the command-line arguments
  *
  * Return: 0 if successful, 1 otherwise
+ *
+ * Description: This program adds positive numbers passed as command-line arguments.
  */
-
 int main(int argc, char *argv[])
 {
+	int sum = 0;
+
 	if (argc == 1)
 	{
 		printf("0\n");
-		return (0);
+		return 0;
 	}
-
-	int sum = 0;
 
 	for (int i = 1; i < argc; i++)
 	{
@@ -27,7 +28,7 @@ int main(int argc, char *argv[])
 			if (!isdigit(argv[i][j]))
 			{
 				printf("Error\n");
-				return (1);
+				return 1;
 			}
 		}
 
@@ -36,5 +37,5 @@ int main(int argc, char *argv[])
 
 	printf("%d\n", sum);
 
-	return (0);
+	return 0;
 }
