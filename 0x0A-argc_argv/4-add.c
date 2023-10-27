@@ -9,7 +9,8 @@
  *
  * Return: 0 if successful, 1 otherwise
  *
- * Description: This program adds positive numbers passed as command-line arguments.
+ * Description: This program adds positive numbers
+ * passed as command-line arguments.
  */
 int main(int argc, char *argv[])
 {
