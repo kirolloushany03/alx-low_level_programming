@@ -3,13 +3,12 @@
 #include <string.h>
 
 /**
- * argstostr - concatenates all the arguments of the program
- * @ac: number of arguments
- * @av: array of arguments
+ * argstostr - concatenates all command-line arguments into a single string
+ * @ac: The argument count
+ * @av: The argument vector, an array of strings
  *
- * Return: pointer to the concatenated string, or NULL if it fails
+ * Return: A pointer to the concatenated string, or NULL on failure
  */
-
 char *argstostr(int ac, char **av)
 {
 	if (ac == 0 || av == NULL)
@@ -17,8 +16,8 @@ char *argstostr(int ac, char **av)
 
 	int total_length = 0;
 	int i, j;
-
 	char *result;
+	int index = 0;
 
 	for (i = 0; i < ac; i++)
 		total_length += strlen(av[i]) + 1;
@@ -26,8 +25,6 @@ char *argstostr(int ac, char **av)
 	result = (char *)malloc(total_length * sizeof(char));
 	if (result == NULL)
 		return (NULL);
-
-	int index = 0;
 
 	for (i = 0; i < ac; i++)
 	{
