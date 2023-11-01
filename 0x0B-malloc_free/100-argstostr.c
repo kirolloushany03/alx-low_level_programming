@@ -9,6 +9,7 @@
  *
  * Return: pointer to the concatenated string, or NULL if it fails
  */
+
 char *argstostr(int ac, char **av)
 {
 	if (ac == 0 || av == NULL)
@@ -17,11 +18,12 @@ char *argstostr(int ac, char **av)
 	int total_length = 0;
 	int i, j;
 
+	char *result;
+
 	for (i = 0; i < ac; i++)
 		total_length += strlen(av[i]) + 1;
 
-	char *result = (char *)malloc(total_length * sizeof(char));
-
+	result = (char *)malloc(total_length * sizeof(char));
 	if (result == NULL)
 		return (NULL);
 
