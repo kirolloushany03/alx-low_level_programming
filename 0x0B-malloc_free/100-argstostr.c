@@ -11,29 +11,42 @@
  */
 char *argstostr(int ac, char **av)
 {
+	int i, j, k, size;
+	char *result;
+
+	size = 0;
+	k = 0;
 	if (ac == 0 || av == NULL)
 		return (NULL);
-
-	int total_length = 0;
-	int i, j;
-	char *result;
-	int index = 0;
-
-	for (i = 0; i < ac; i++)
-		total_length += strlen(av[i]) + 1;
-
-	result = (char *)malloc(total_length * sizeof(char));
+	i = 0;
+	while (i < ac)
+	{
+		j = 0;
+		while (av[i][j])
+		{
+			size++;
+			j++;
+		}
+		size++;
+		i++;
+	}
+	result = malloc((sizeof(char) * size) + 1);
 	if (result == NULL)
 		return (NULL);
-
-	for (i = 0; i < ac; i++)
+	i = 0;
+	while (i < ac)
 	{
-		for (j = 0; av[i][j] != '\0'; j++)
-			result[index++] = av[i][j];
-		result[index++] = '\n';
+		j = 0;
+		while (av[i][j])
+		{
+			result[k] = av[i][j];
+			j++;
+			k++;
+		}
+		result[k] = '\n';
+		k++;
+		i++;
 	}
-
-	result[index] = '\0';
-
+	result[k] = '\0';
 	return (result);
 }
