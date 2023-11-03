@@ -1,6 +1,5 @@
-#include "mainc.h"
 #include <stdlib.h>
-
+#include "mainc.h"
 
 /**
 * malloc_checked - Allocates memory using malloc
@@ -10,6 +9,7 @@
 * the function will cause normal process termination with a
 * status value of 98
 */
+
 void *malloc_checked(unsigned int b)
 {
 	void *ptr;
