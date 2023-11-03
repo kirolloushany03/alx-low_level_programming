@@ -6,7 +6,6 @@
 * @ptr: A pointer to the memory previously allocated
 * @old_size: The size, in bytes, of the allocated space for ptr
 * @new_size: The new size, in bytes of the new memory block
-
 * Return: A pointer to the newly allocated memory. If new_size > old_size, the
 * "added" memory is not initialized. If new_size == old_size, returns ptr.
 * If ptr is NULL, equivalent to malloc(new_size).
