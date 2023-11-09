@@ -1,5 +1,5 @@
-#include "function_pointer_main.h"
-
+#include "fp.h"
+#include <stdlib.h>
 /**
  *print_name - is a function that print char (a name)
  *@name: is name that will given to the function
