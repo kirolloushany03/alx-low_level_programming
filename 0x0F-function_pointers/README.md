@@ -1,0 +1,1 @@
+this how we willplay by calling the function with pointer
