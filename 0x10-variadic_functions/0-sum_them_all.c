@@ -1,4 +1,4 @@
-#include <stdarg.h>
+#include "variadic_functions.h"
 
 /**
  * sum_them_all - Calculate the sum of an unlimited variable
