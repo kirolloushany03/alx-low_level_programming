@@ -1,15 +1,14 @@
-section .data
-    hello db "Hello, Holberton", 10 ; 10 is the newline character
+section	.data
+	hello	db	"Hello, Holberton", 10
 
-section .text
-    extern printf
-    global main
+section	.text
+	extern	printf
+	global	main
 
 main:
-    mov rdi, hello ; Set the format string address
-    call printf    ; Call printf function
+	mov	rdi, hello
+	call	printf
 
-    ; Exit the program
-    mov rax, 60     ; syscall: exit
-    xor rdi, rdi    ; status: 0
-    syscall
+	mov	rax, 60
+	xor	rdi, rdi
+	syscall
