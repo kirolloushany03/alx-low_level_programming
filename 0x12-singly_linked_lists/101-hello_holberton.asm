@@ -1,14 +1,15 @@
-section	.data
-	hello	db	"Hello, Holberton", 10
+section .data
+	hello	db	'Hello, Holberton', 0
+	hello_len	equ	$-hello
 
-section	.text
-	extern	printf
+section .text
 	global	main
+	extern	printf
 
 main:
-	mov	rdi, hello
+	mov	rdi,	hello
+	xor	rax,	rax
 	call	printf
-
-	mov	rax, 60
-	xor	rdi, rdi
+	mov	eax,	0x60
+	xor	edi,	edi
 	syscall
