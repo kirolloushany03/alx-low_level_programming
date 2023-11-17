@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * pre_main_message - Prints the message before the main function is executed.
+ *before_main - Prints the message before the main function is executed.
  */
 void before_main(void)
 {
