@@ -2,7 +2,7 @@
 
 /**
  * free_listint_safe - Frees a listint_t linked list
- * @head: Double pointer to the head of the list
+ * @h: Double pointer to the head of the list
  *
  * Description: This function frees the linked list
  * by traversing it once and freeing each node.
