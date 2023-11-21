@@ -5,8 +5,8 @@
  * @head: Pointer to the head of the list
  * @index: The index of the node, starting at 0
  *
- * Description: This function iterates over the linked list, starting from the head
- * It returns a pointer to the nth node if it exists, or NULL if it does not exist
+ * Description: This function iterates over the linked list
+ * It returns a pointer to the nth node if it exists
  *
  * Return: The address of the nth node, or NULL if it does not exist
  */
