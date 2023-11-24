@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_binary - prints the binary representation of a number
@@ -8,21 +9,22 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int mask = 1UL << (sizeof(unsigned long int) * 8 - 1);
+	int i = 0, binary[128], j;
 
 	if (n == 0)
 	{
-		printf("0");
+		putchar('0');
 		return;
 	}
-
-	while (mask)
+	while (n > 0)
 	{
-		if (n & mask)
-			printf("1");
-		else
-			printf("0");
+		binary[i] = n & 1;
+		n = n >> 1;
+		i++;
+	}
 
-		mask >>= 1;
+	for (j = i - 1; j >= 0; j--)
+	{
+		putchar(binary[j] + '0');
 	}
 }
