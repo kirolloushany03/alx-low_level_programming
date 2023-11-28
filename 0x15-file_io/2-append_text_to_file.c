@@ -12,14 +12,14 @@ int append_text_to_file(const char *filename, char *text_content)
 	int fd, write_bytes, open_flags;
 
 	if (filename == NULL)
-		return -1;
+		return (-1);
 
 	open_flags = O_WRONLY | O_APPEND;
 
 	fd = open(filename, open_flags, 0664);
 
 	if (fd == -1)
-		return -1;
+		return (-1);
 
 	if (text_content != NULL)
 	{
@@ -28,10 +28,10 @@ int append_text_to_file(const char *filename, char *text_content)
 		if (write_bytes == -1)
 		{
 			close(fd);
-			return -1;
+			return (-1);
 		}
 	}
 
 	close(fd);
-	return 1;
+	return (1);
 }
