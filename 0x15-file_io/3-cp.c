@@ -1,9 +1,14 @@
 #include "main.h"
 /**
- * ErrorExitFd - Prints an error message and exits the program
+ * ErrorExistFd - exit for Fds.
+ *Prints an error message and
+ * exits the program if closing a file descriptor fails.
  * @fd: The file descriptor to close.
  *
- * This function is used to handle errors related to closing file descriptors.
+ * This function is used to handle errors related to
+ * closing file descriptors. It prints
+ * an error message indicating the failure to close
+ * the program with an exit code of 100.
  */
 void ErrorExistFd(int fd)
 {
