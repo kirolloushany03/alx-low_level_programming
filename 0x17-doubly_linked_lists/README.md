@@ -9,7 +9,6 @@ A doubly linked list is a data structure in which each node contains a data elem
 
 ### Structure Definition
 
-```c
 struct dlistint_s {
     int n;
     struct dlistint_s *prev;
