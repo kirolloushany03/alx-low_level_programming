@@ -8,35 +8,20 @@
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	char *compare_key;
-	unsigned long int index;
-hash_node_t *current_node;
+	unsigned long int idx;
+	hash_node_t *head;
 
-	if (*key == '\0')
+	if (!ht)
+		return (0);
+	idx = key_index((const unsigned char *)key, ht->size);
+	head = ht->array[idx];
+	if (!head)
 	{
-	return (NULL);
+		return (NULL);
 	}
-
-	/*calculate index*/
-
-	index = key_index((const unsigned char *)key, ht->size);
-
-	/*initialize current_node for iteration*/
-	current_node = ht->array[index];
-
-	/*Traverse the linked list*/
-	while (current_node)
-	{
-	/*compare keys*/
-	compare_key = current_node->key;
-	if (strcmp(compare_key, key) == 0)
-	{
-		/*Key found, return its value*/
-		return (current_node->value);
-	}
-	current_node = current_node->next;
-	}
-
-	/*Key not found, return NULL*/
+	else
+		for (; head; head = head->next)
+			if (!strcmp(head->key, key))
+				return (head->value);
 	return (NULL);
 }
