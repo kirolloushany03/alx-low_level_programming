@@ -2,11 +2,17 @@
 
 void printArray(int *arr, int size)
 {
-	int i;
 	printf("Searching in array: ");
-	for (i = 0; i < size; i++)
+	for (int i = 0; i < size; i++)
 	{
-		printf("%d, ", arr[i]);
+		if (i < size - 1)
+		{ // Check if the current element is not the last one
+			printf("%d, ", arr[i]);
+		}
+		else
+		{
+			printf("%d", arr[i]); // Print the last element without a comma
+		}
 	}
 	printf("\n");
 }
