@@ -8,7 +8,8 @@
  * @size: Number of nodes in the linked list.
  * @value: Value to search for.
  *
- * Return: Index where the value is found, or -1 if the value is not present.
+ * Return: Index where the value
+ * is is found, or -1 if the value is not present.
  */
 listint_t *jump_list(listint_t *list, size_t size, int value)
 {
