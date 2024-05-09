@@ -2,8 +2,9 @@
 
 void printArray(int *arr, int size)
 {
+	int i;
 	printf("Searching in array: ");
-	for (int i = 0; i < size; i++)
+	for (i = 0; i < size; i++)
 	{
 		if (i < size - 1)
 		{ /*Check if the current element is not the last one*/
