@@ -6,12 +6,13 @@ void printArray(int *arr, int size)
 	for (int i = 0; i < size; i++)
 	{
 		if (i < size - 1)
-		{ // Check if the current element is not the last one
+		{ /*Check if the current element is not the last one*/
 			printf("%d, ", arr[i]);
 		}
 		else
 		{
-			printf("%d", arr[i]); // Print the last element without a comma
+			/*Print the last element without a comma*/
+			printf("%d", arr[i]);
 		}
 	}
 	printf("\n");
