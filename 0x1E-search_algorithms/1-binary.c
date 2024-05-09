@@ -6,7 +6,7 @@ void printArray(int *arr, int size)
 	printf("Searching in array: ");
 	for (i = 0; i < size; i++)
 	{
-		printf("%d ", arr[i]);
+		printf("%d, ", arr[i]);
 	}
 	printf("\n");
 }
@@ -14,9 +14,16 @@ void printArray(int *arr, int size)
 int binary_search(int *array, size_t size, int value)
 {
 	int low, high, mid;
-	low = array[0];
-	high = array[size - 1];
+	low = 0;
+	high = size - 1;
+
+	if (array == NULL)
+	{
+		return (-1);
+	}
+
 	printArray(array, size);
+
 	while (low <= high)
 	{
 		mid = (low + high) / 2;	 /*here we got the average*/
@@ -33,8 +40,11 @@ int binary_search(int *array, size_t size, int value)
 		{
 			high = mid - 1;
 		}
-
-		printArray(array + low, high - low + 1);
+		/*first try i was putting this one without */
+		if (high - low + 1 > 0)
+		{
+			printArray(array + low, high - low + 1);
+		}
 	}
 	return (-1);
 }
