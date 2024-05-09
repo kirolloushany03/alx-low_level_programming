@@ -1,4 +1,5 @@
 #include <stdio.h>
+// testing first
 int binary_search(int *array, size_t size, int value);
 
 void printArray(int *arr, int size)
