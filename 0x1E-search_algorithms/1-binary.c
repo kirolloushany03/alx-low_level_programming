@@ -66,7 +66,7 @@ int binary_search(int *array, size_t size, int value)
 			high = mid - 1;
 		}
 
-		/* First try I was putting this one without */
+		/* First try I was putting this one without if*/
 		if (high - low + 1 > 0)
 		{
 			printArray(array + low, high - low + 1);
