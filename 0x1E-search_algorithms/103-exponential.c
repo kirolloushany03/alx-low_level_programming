@@ -10,6 +10,7 @@
 void printArray(int *arr, int size)
 {
 	int i;
+
 	printf("Searching in array: ");
 	for (i = 0; i < size; i++)
 	{
@@ -56,7 +57,8 @@ int binary_search(int *array, size_t size, int value)
 }
 
 /**
- * exponential_search - Searches for a value in an array using exponential search.
+ * exponential_search - Searches for a value in
+ * an array using exponential search.
  * @array: Pointer to the first element of the array.
  * @size: Size of the array.
  * @value: Value to search for.
